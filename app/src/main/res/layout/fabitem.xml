@@ -9,12 +9,17 @@
 
     <EditText
         android:id="@+id/editTextText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="110dp"
         android:autofillHints=""
-        android:hint="Enter text"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round"
+        android:hint="Type here"
         android:inputType="text"
         android:textSize="20sp"
+        android:textColor="@color/black"
         tools:ignore="HardcodedText,LabelFor" />
 
     <LinearLayout
@@ -23,44 +28,32 @@
         android:orientation="vertical">
 
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:autofillHints=""
-            android:hint="Upload Media (Optional)"
-            android:textSize="20sp"
-            tools:ignore="HardcodedText,LabelFor" />
+<!--        <EditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:autofillHints=""-->
+<!--            android:hint="Upload Media (Optional)"-->
+<!--            android:textSize="20sp"-->
+<!--            tools:ignore="HardcodedText,LabelFor" />-->
 
-        <ImageView
-            android:id="@+id/Image"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.151"
-            android:src="@drawable/ic_add_a_photo"/>
+            android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/button_upload"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Upload"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/Image"
-            app:layout_constraintStart_toStartOf="@+id/Image"
-            app:layout_constraintTop_toBottomOf="@+id/Image"
-            tools:ignore="MissingConstraints" />
 
-        <Button
-            android:id="@+id/btn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="30dp"
-            android:text="Post"
-            tools:ignore="HardcodedText" />
+            <Button
+                android:id="@+id/btnUpload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="@color/blue"
+                android:text="UPLOAD"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
     </LinearLayout>
 
 </LinearLayout>

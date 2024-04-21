@@ -19,7 +19,6 @@ public class ContactAdapter extends BaseAdapter {
         this.arrayList = arrayList;
         this.context = context;
         layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-
     }
 
     @Override
